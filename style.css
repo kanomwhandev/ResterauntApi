@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Montserrat&family=Open+Sans&display=swap");
+
+* {
+  margin: 0 0 15px 0px; 
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Kanit", sans-serif;
+  font-weight: bold;
+  font-size: large;
+  
+  }
+
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    color: #888;
+    padding: 25px 75px 35px 645px;
+    font-family: "Merriweather", serif;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-color: #ffffff;    
+    background-color: white;
+    box-shadow: 5px 5px 2px 1.5px rgb(0, 0, 0);
+   
+  }
+  body {
+    background-image:  url("");
+    background-size: cover;
+    background-position: center;
+    font-family: system-ui;
+    color: #555;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: -moz-linear-gradient(
+    45deg,
+    #02e1ba 0%,
+    #26c9f2 29%,
+    #d911f2 66%,
+    #ffa079 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #02e1ba 0%,
+    #26c9f2 29%,
+    #d911f2 66%,
+    #ffa079 100%
+  );
+  background: linear-gradient(  
+    45deg,
+    #02e1ba 0%,
+    #26c9f2 29%,
+    #d911f2 66%,
+    #ffa079 100%
+  );
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  min-height: calc(100vh - 2rem);
+  }
+/*animation background*/
+  .area::before,
+  .area::after {
+  content: " ";
+  width: 70vmax;
+  height: 70vmax;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.07);
+  left: -20vmin;
+  top: -20vmin;
+  animation: morph 15s linear infinite alternate, spin 20s linear infinite;
+  z-index: 1;
+  will-change: border-radius, transform;
+  transform-origin: 30% 30%;
+  pointer-events: none;
+}
+
+.area::after {
+  width: 70vmin;
+  height: 70vmin;
+  left: auto;
+  right: -10vmin;
+  top: auto;
+  bottom: 0;
+  animation: morph 10s linear infinite alternate,
+    spin 26s linear infinite reverse;
+  transform-origin: 10% 10%;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+  
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+  }
+  h2{   font-family: "Merriweather", serif;
+        margin:50px 5px 35px 5px;
+        background-color: white;
+        font-size: 30px;
+        color:rgb(0, 0, 0); text-overflow: clip;
+        text-align: center;
+        border-style:ridge ;
+        border-width:medium;
+        border-color: #000000;
+        box-shadow: 5px 6px 2px 1px rgb(0, 0, 0);
+        border-radius: 10px;
+  }
+  h1{
+    font-size: 30px;
+  }
+  h3{
+    margin-bottom: 20px;
+    font-weight: 300px  ;
+    font-family: "Merriweather", serif;
+
+  }
+  
+  #menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* จัดให้รายการอยู่ตรงกลางในแนวนอน */
+    align-items: center; /* จัดให้รายการอยู่ตรงกลางในแนวตั้ง */
+    font-size: 1.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    transition: opacity 1s;
+    
+  }
+  
+  .menu-item {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease ease-in-out ;
+
+    
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: -2px 0 10px  rgba(245, 245, 245, 0.1);;
+    
+  }
+  
+  .menu-item img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .menu-item h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  .menu-item p {
+    margin-top: 5px;
+    font-size: 1.1em;
+    
+  }
+  
+  #order-summary {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    padding: 80px 150px 80px 150px;
+    font-family: "Merriweather", serif;
+    color: rgb(255, 255, 255);
+    background-color: #ffffff;
+    border-style:inherit;
+    border-width:bold;
+    border-color: #ffffff;  
+    border-radius: 10px;
+   box-sizing: 500px;
+   border-color: #000000;
+    box-shadow: 10px 10px 2px 1px rgb(0, 0, 0);
+    border-radius: 10px;
+  }
+ 
+  #order-summary li {border-color: #000000;
+    box-shadow: 5px 5px 2px 1px rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 10px 60px 0px 0px ;
+    object-fit: cover;
+    color:black;
+    border-style:outset;
+    border-width:10px;
+    border-spacing:50dvi ;
+    border-color: #000000;  
+    border-radius: 10px;
+    font-display: flex;
+    font-weight: 5px;
+    font-style:normal;
+    font-display:flex;
+
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto; /* จัดให้ปุ่มอยู่ตรงกลางแนวนอน */
+    padding: 10px 20px;
+    background-color: #e42121e7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff0000;
+  }
+  
+  .menu-item img {
+    max-width: 100%;
+    height: 300px; /* ระบุความสูงของรูปภาพที่เท่ากัน */
+    object-fit: cover; /* ให้รูปภาพทำการปรับขนาดเพื่อให้ตรงกับขนาดที่กำหนด */
+    border-radius: 25px;
+  
+  }
+
+  @media (max-width: 760px) {
+    .menu {
+      width: calc(50% - 20px); /* สองคอลัมน์บนหน้าจอขนาดเล็ก */
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu {
+      width: calc(100% - 20px);
+      grid-template-columns: repeat(2, 1fr);   }
+    }
+
+  
+   
+.button{
+  position:relative;
+  display:inline-block;
+  margin:20px;
+  
+  
+}
+
+.button a{
+  color:white;
+  font-family:Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:36px;
+  text-align: center;
+  text-decoration:none;
+  background-color:#FFA12B;
+  display:block;
+  position:relative;
+  padding:20px 40px;
+  font-family: "Kanit", sans-serif;
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.button:hover a:active{background-color:#ff8000fb;
+color:rgba(255, 255, 255, 0.959);
+}
+.button a:active{
+  top:10px;
+  background-color:#F78900;
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+}
+
+.button:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute;
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  background-color:#2B1800;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  
+}
+.menu-item__order {
+  font-size: 2rem;
+    margin-bottom: 0.2rem;
+    font-weight: bolder;
+    border-style:ridge;
+    border-width: medium;
+    border-radius: 10px;
+    border-color: #ff00a6;
+    margin: 1px 14px 20px 10px;
+    box-shadow: 5px 5px 2px 1px rgb(250, 101, 146);
+
+}
+
+.menu-item__price {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  color: #888;
+  margin: 1px 14px 20px 10px;
+  border-style:ridge ;
+  border-width:medium;
+  border-color: #b300ff;
+  box-shadow: 5px 5px 2px 1px rgb(195, 98, 255);
+  border-radius: 10px;
+  
+}
+.menu-item__category {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  color: #888;
+  margin: 1px 14px 20px 10px;
+  border-style:ridge ;
+  border-width:medium;
+  border-color: #b300ff;
+  box-shadow: 5px 5px 2px 1px rgb(195, 98, 255);
+  border-radius: 10px;
+}
+.menu-item__area {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  color: #888;
+  margin: 1px 14px 20px 10px;
+  border-style:ridge ;
+  border-width:medium;
+  border-color: #b300ff;
+  box-shadow: 5px 5px 2px 1px rgb(195, 98, 255);
+  border-radius: 10px;
+}
+.menu-item__name {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: #888;
+  padding: 25px 20px 0px 20px;
+  font-family: "Kanit", sans-serif;
+  font-weight:bold ;
+  
+}
+
+.menu-item__order {
+  font-family: "Kanit", sans-serif;
+  color: #888;
+}
+
+.total{
+  background-color: white;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  color: black;
+  margin: px 0px 20px 10px;
+  text-overflow: clip;
+  text-align: center;
+  border-style:ridge ;
+  border-width:medium;
+  border-color: #000000;
+  box-shadow: 5px 5px 2px 1px rgb(0, 0, 0);
+  border-radius: 10px;
+ 
+  
+}
+#total-price{
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.flower {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+@keyframes fall {
+  0% {
+    top: -20%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+.flake {
+  position: fixed;
+  top: -20%;
+  animation: fall 10s linear infinite;
+  font-size: 30px;
+}
+
+.flake:nth-last-of-type(0) {
+  left: 0%;
+  animation-delay: 0s;
+
+}
+
+.flake:nth-last-of-type(1) {
+  left: 0%;
+  animation-delay: 0s;
+}
+
+.flake:nth-last-of-type(2) {
+  left: 10%;
+  animation-delay: 3s;
+}
+
+.flake:nth-last-of-type(3) {
+  left: 20%;
+  animation-delay: 5s;
+}
+
+.flake:nth-last-of-type(4) {
+  left: 30%;
+  animation-delay: 2s;
+}
+
+.flake:nth-last-of-type(5) {
+  left: 40%;
+  animation-delay: 1s;
+}
+
+.flake:nth-last-of-type(6) {
+  left: 50%;
+  animation-delay: 4s;
+}
+
+.flake:nth-last-of-type(7) {
+  left: 60%;
+  animation-delay: 3s;
+}
+
+.flake:nth-last-of-type {
+  left: 70%;
+  animation-delay: 2s;
+}
+
+.flake:nth-last-of-type(9) {
+  left: 80%;
+  animation-delay: 0s;
+}
+
+.flake:nth-last-of-type(10) {
+  left: 90%;
+  animation-delay: 6s;
+}
