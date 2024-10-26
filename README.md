@@ -11,6 +11,9 @@ Responsive grid layout
 Interactive hover effects
 Price display in THB (Thai Baht)
 
+![Screenshot 2024-10-02 144058](https://github.com/user-attachments/assets/e5ed11f6-598e-4dd1-b3e7-865bf9e6afbb)
+
+
 ![image](https://github.com/user-attachments/assets/d41f3a59-a35e-4e37-b18b-ea8656fecdb6)
 ![image](https://github.com/user-attachments/assets/b308de8e-1d64-45e2-880e-01566a9f8889)
 ![image](https://github.com/user-attachments/assets/7749150a-d0af-4b68-a922-36cd200a9671)
