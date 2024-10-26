@@ -1,4 +1,4 @@
-🍽️ Restaurant Menu API Integration Project
+**🍽️ Restaurant Menu API Integration Project**
 Project Overview
 This project demonstrates the integration of a restaurant menu API to create an elegant and responsive menu display system. The implementation showcases various international dishes with detailed information including pricing, categories, and regional classifications.
 Key Features
