@@ -13,4 +13,5 @@ Price display in THB (Thai Baht)
 
 ![Screenshot 2024-10-02 144058](https://github.com/user-attachments/assets/aa6daf89-00b6-415e-a59c-348cf4829cb5)
 
-<img src="[example.png](https://www.flaticon.com/free-icon/js_5968292?term=javascript&page=1&position=3&origin=search&related_id=5968292)" ความกว้าง="300" />
+<img src="![image](https://github.com/user-attachments/assets/1cd68eb1-c6f3-40b7-bd7b-6108f1b2ebcf)
+" ความกว้าง="300" />
